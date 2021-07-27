@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png">
+            </div>
+            <div class="subtitle">
+                <span>The security framework</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="diagram">
+            <div class="line">
+                <div class="empty-entity"></div>
+                <div class="empty-arrow"></div>
+                <div class="entity clickable" id="adc" data-bs-toggle="tooltip" data-bs-placement="right" title="">
+                    <div class="title">
+                        <span>ADC Repositories</span>
+                    </div>
+                    <img src="assets/turnkey.png">
+                </div>
+            </div>
+            <div class="line">
+                <div class="empty-entity"></div>
+                <div class="empty-arrow"></div>
+
+                <div class="vertical-arrow">
+                    <img src="assets/down-single-arrow.png">
+                </div>
+            </div>
+            <div class="line">
+                <div class="line-inline">
+                    <div class="entity" data-bs-toggle="tooltip" data-bs-placement="bottom" title="The user (you) or an external application.">
+                        <div class="title">
+                            <span>Requesting Party</span>
+                        </div>
+                        <img src="assets/requesting-party.png">
+                    </div>
+
+                    <div class="arrow">
+                        <img src="assets/double-arrow.png">
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="title" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Includes all components that are defined by the Security Framework">
+                        Security Framework
+                    </div>
+                    <div class="line">
+                        <div class="entity clickable" id="middleware" data-bs-toggle="tooltip" data-bs-placement="right" title="Handles access control for ADC-compliant repositories.">
+                            <div class="title">
+                                <span>ADC-Middleware</span>
+                            </div>
+                            <img src="assets/middleware.png">
+                        </div>
+
+                        <div class="arrow">
+                            <img src="assets/double-arrow.png">
+                        </div>
+
+                        <div class="entity clickable" id="dashboard" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard application where Data Stewards are able to control the accessibility of their datasets">
+                            <div class="title">
+                                <span>Data Steward Dashboard</span>
+                            </div>
+                            <img src="assets/dashboard.png">
+                        </div>
+                    </div>
+
+                    <div class="line">
+                        <div class="vertical-arrow">
+                            <img src="assets/down-double-arrow.png">
+                        </div>
+                    </div>
+
+                    <div class="line">
+                        <div class="entity clickable" id="auth" data-bs-toggle="tooltip" data-bs-placement="right" title="">
+                            <div class="title">
+                                <span>Authorization</span>
+                            </div>
+                            <img src="assets/keycloak.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
