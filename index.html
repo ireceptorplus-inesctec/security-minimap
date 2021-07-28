@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Security Framework minimap - iReceptor Plus</title>
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
@@ -22,7 +22,7 @@
             <div class="line">
                 <div class="empty-entity"></div>
                 <div class="empty-arrow"></div>
-                <div class="entity clickable" id="adc" data-bs-toggle="tooltip" data-bs-placement="right" title="">
+                <div class="entity clickable" id="adc" data-bs-toggle="tooltip" data-bs-placement="right" title="AIRR Data Commons (ADC) API that provides access to AIRR-seq data. Unprotected. Only accessible for this demo.">
                     <div class="title">
                         <span>ADC Repositories</span>
                     </div>
@@ -39,7 +39,7 @@
             </div>
             <div class="line">
                 <div class="line-inline">
-                    <div class="entity" data-bs-toggle="tooltip" data-bs-placement="bottom" title="The user (you) or an external application.">
+                    <div class="entity" data-bs-toggle="tooltip" data-bs-placement="bottom" title="The user (you) or even an external application like a webpage.">
                         <div class="title">
                             <span>Requesting Party</span>
                         </div>
@@ -56,7 +56,7 @@
                         Security Framework
                     </div>
                     <div class="line">
-                        <div class="entity clickable" id="middleware" data-bs-toggle="tooltip" data-bs-placement="right" title="Handles access control for ADC-compliant repositories.">
+                        <div class="entity clickable" id="middleware" data-bs-toggle="tooltip" data-bs-placement="right" title="The main service of the Security Framework that handles access control for ADC-compliant repositories.">
                             <div class="title">
                                 <span>ADC-Middleware</span>
                             </div>
@@ -84,7 +84,7 @@
                     <div class="line">
                         <div class="entity clickable" id="auth" data-bs-toggle="tooltip" data-bs-placement="right" title="">
                             <div class="title">
-                                <span>Authorization</span>
+                                <span>Authentication & Authorization</span>
                             </div>
                             <img src="assets/keycloak.png">
                         </div>
@@ -93,7 +93,10 @@
             </div>
         </div>
     </div>
+    <div class="container additional-information"></div>
+
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="js/urls.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

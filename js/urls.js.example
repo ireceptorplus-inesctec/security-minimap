@@ -1,0 +1,6 @@
+var urls = {
+    "adc":        "",
+    "middleware": "",
+    "dashboard":  "",
+    "auth":       ""
+};

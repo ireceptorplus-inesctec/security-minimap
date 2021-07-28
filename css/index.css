@@ -15,15 +15,16 @@ html, body {
     float: left;
 }
 
-.header span {
-    font-size: 24px;
-    padding-top: 600px;
-}
-
 .header .container .subtitle {
     margin-left: 40px;
     margin-top: 60px;
     display: inline-block;
+}
+
+.header .container .subtitle span {
+    font-size: 26px;
+    font-weight: 600;
+    padding-top: 600px;
 }
 
 .clickable {
@@ -115,4 +116,8 @@ html, body {
     bottom: -30px;
     border: 2px solid #000000;
     padding: 0 20px;
+}
+
+.additional-information {
+    margin-top: 50px;
 }
